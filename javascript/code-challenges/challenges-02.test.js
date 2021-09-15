@@ -118,7 +118,18 @@ For example: evenOdd([1,2,3]) returns ['odd','even','odd'].
 ------------------------------------------------------------------------------------------------ */
 
 const evenOdd = (arr) => {
-  // Solution code here...
+  // map thru the numbers, check if actually a number. if not return n/a. else is it is a number check if even or odd using mod and return the string ecen or odd accordingly... return the new array
+  let evenOddArray = arr.map(numbers => {
+    if (!(typeOf number === 'number')){
+      return 'N/A';
+    }
+    if (number % 2) {
+      return 'odd';
+     } else {
+       return 'even';
+    }
+  });
+  return evenOddArray; 
 };
 
 /* ------------------------------------------------------------------------------------------------
